@@ -1,0 +1,8 @@
+﻿@{
+	ViewData["Title"] = "User Dashboard";
+}
+<h2>@ViewData["Title"]</h2>
+<p>
+	Welcome, @((User?.Identity?.Name) ?? "Guest")! You’re in the User area.
+</p>
+<p><a asp-controller="Account" asp-action="Logout">Log out</a></p>
